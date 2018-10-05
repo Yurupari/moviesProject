@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
     // get popular movies
     this.movieService.getPopularMovies().subscribe(data => {
       this.popular_movies = data['results'];
-      // console.log(this.popular_movies);
     });
 
   }
